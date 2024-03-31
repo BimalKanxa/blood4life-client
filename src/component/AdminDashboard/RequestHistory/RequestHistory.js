@@ -6,7 +6,7 @@ const RequestHistory = () => {
   const [bloodrequest, setBloodrequest] = useState([]);
 
   useEffect(() => {
-    fetch("https://hidden-coast-99117.herokuapp.com/bloodRequest")
+    fetch("https://blood4life-server.vercel.app/bloodRequest")
       .then((res) => res.json())
       .then((data) => {
         setBloodrequest(data);

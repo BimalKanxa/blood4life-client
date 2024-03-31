@@ -11,7 +11,7 @@ const MakeAdmin = () => {
   };
   const handleAdminSubmit = (e) => {
     const user = { email };
-    fetch("https://hidden-coast-99117.herokuapp.com/users/admin", {
+    fetch("https://blood4life-server.vercel.app/users/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

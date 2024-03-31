@@ -15,7 +15,7 @@ const AdminHome = () => {
   const [rejected, setBloodRejected] = useState([]);
 
   useEffect(() => {
-    fetch("https://hidden-coast-99117.herokuapp.com/donateBlood")
+    fetch("https://blood4life-server.vercel.app/donateBlood")
       .then((res) => res.json())
       .then((data) => {
         const Aprove = data.filter((data) => data?.status === "Approved");
@@ -29,7 +29,7 @@ const AdminHome = () => {
   }, []);
 
   useEffect(() => {
-    fetch("https://hidden-coast-99117.herokuapp.com/bloodRequest")
+    fetch("https://blood4life-server.vercel.app/bloodRequest")
       .then((res) => res.json())
       .then((data) => {
         const AproveRequestData = data.filter(

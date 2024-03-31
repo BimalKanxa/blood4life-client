@@ -87,7 +87,7 @@ const useFirebase = () => {
     }, [auth])
 
     useEffect(() => {
-        fetch(`https://hidden-coast-99117.herokuapp.com/users/${user.email}`)
+        fetch(`https://blood4life-server.vercel.app/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email])
@@ -102,7 +102,7 @@ const useFirebase = () => {
 
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
-        fetch('https://hidden-coast-99117.herokuapp.com/users', {
+        fetch('https://blood4life-server.vercel.app/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'

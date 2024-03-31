@@ -10,7 +10,7 @@ const Donar = () => {
   const [bloods, setBloods] = useState([]);
 
   useEffect(() => {
-    fetch("https://hidden-coast-99117.herokuapp.com/bloods").then((res) =>
+    fetch("https://blood4life-server.vercel.app/bloods").then((res) =>
       res.json().then((data) => setBloods(data))
     );
   }, []);
@@ -28,7 +28,7 @@ const Donar = () => {
     //   });
     // }
     axios
-      .post("https://hidden-coast-99117.herokuapp.com/bloods", data)
+      .post("https://blood4life-server.vercel.app/bloods", data)
       .then((res) => {
         if (res.data.insertedId) {
           Swal.fire({

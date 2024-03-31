@@ -7,7 +7,7 @@ const DonationRequests = () => {
   const [donationRequest, setDonationRequest] = useState([]);
 
   useEffect(() => {
-    fetch("https://hidden-coast-99117.herokuapp.com/bloods")
+    fetch("https://blood4life-server.vercel.app/bloods")
       .then((res) => res.json())
       .then((data) => {
         // const AproveRequestData =data.filter(data =>data.status ==="Approved")
@@ -17,7 +17,7 @@ const DonationRequests = () => {
   // update approved status
   const handleApproved = (id) => {
     axios
-      .put(`https://hidden-coast-99117.herokuapp.com/bloods/${id}`, {
+      .put(`https://blood4life-server.vercel.app/bloods/${id}`, {
         status: "Approved",
       })
       .then((res) => {
@@ -33,7 +33,7 @@ const DonationRequests = () => {
   // // update rejected status
   const handleRejected = (id) => {
     axios
-      .put(`https://hidden-coast-99117.herokuapp.com/bloods/${id}`, {
+      .put(`https://blood4life-server.vercel.app/bloods/${id}`, {
         status: "Rejected",
       })
       .then((res) => {

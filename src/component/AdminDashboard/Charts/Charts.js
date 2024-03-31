@@ -14,7 +14,7 @@ const Charts = () => {
 
   //////load data//
   useEffect(() => {
-    fetch("https://hidden-coast-99117.herokuapp.com/bloods")
+    fetch("https://blood4life-server.vercel.app/bloods")
       .then((res) => res.json())
       .then((approve) => {
         const data = approve.filter((data) => data?.status === "Approved");

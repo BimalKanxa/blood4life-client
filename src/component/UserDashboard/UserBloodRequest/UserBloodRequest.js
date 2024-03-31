@@ -12,7 +12,7 @@ const UserBloodRequest = () => {
     data.status = `Pending`;
     console.log(data);
     axios
-      .post("https://hidden-coast-99117.herokuapp.com/bloodRequest", data)
+      .post("https://blood4life-server.vercel.app/bloodRequest", data)
       .then((res) => {
         if (res.data.insertedId) {
           Swal.fire({

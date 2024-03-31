@@ -18,7 +18,7 @@ const HomeDonor = () => {
   };
 
   useEffect(() => {
-    fetch("https://hidden-coast-99117.herokuapp.com/donateBlood")
+    fetch("https://blood4life-server.vercel.app/donateBlood")
       .then((res) => res.json())
       .then((Donordata) => {
         const AproveDonorData = Donordata.filter(
