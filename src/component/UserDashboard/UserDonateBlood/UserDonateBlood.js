@@ -107,7 +107,7 @@ const UserDonateBlood = () => {
           <input
             type="date"
             placeholder="Last donate date"
-            {...register("lastDonateDate", { required: true, maxLength: 20 })}
+            {...register("lastDonateDate", {maxLength: 20 })}
           />
 
           <button className="btn btn-danger mt-4" type="submit">
