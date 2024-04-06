@@ -4,18 +4,41 @@ import HomeDonorData from "./HomeDonorData";
 import { useForm } from "react-hook-form";
 import { NavLink } from "react-router-dom";
 import { Button } from "@mui/material";
+import HashLoader from "react-spinners/HashLoader";
+
+
+const override: CSSProperties = {
+  display: "block",
+  margin: "5% auto",
+  borderColor: "red",
+};
+
 const HomeDonor = () => {
+  let [loading, setLoading] = useState(false);
   const [donors, setDonor] = useState([]);
   const [uidonor, setUidonor] = useState([]);
 
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit} = useForm();
 
   const onSubmit = (data) => {
-    const seacredonor = donors.filter(
-      (donor) => donor?.bloodGroup === data.bloodGroup
-    );
-    setUidonor(seacredonor);
+    setLoading(true)
+    if(data.bloodGroup==="All"){
+      setUidonor(donors)
+    }
+    else{
+      const searchdonor = donors.filter(
+        (donor) => donor?.bloodGroup === data.bloodGroup
+      );
+      setUidonor(searchdonor);
+    }
+    // Delay setting loading state to false after 500ms
+    setTimeout(() => {
+      setLoading(false);
+    }, 700);
+  
   };
+
+    
 
   useEffect(() => {
     fetch("https://blood4life-server.vercel.app/donateBlood")
@@ -30,15 +53,23 @@ const HomeDonor = () => {
   }, []);
 
   if (!donors.length) {
+    setLoading(true)
     return (
-      <button class="btn btn-primary spner-btn mb-5" type="button" disabled>
-        <span
-          class="spinner-border spinner-border-sm"
-          role="status"
-          aria-hidden="true"
-        ></span>
-        Loading...
-      </button>
+      // <button class="btn btn-primary spner-btn mb-5" type="button" disabled>
+      //   <span
+      //     class="spinner-border spinner-border-sm"
+      //     role="status"
+      //     aria-hidden="true"
+      //   ></span>
+      //   Loading...
+      // </button>
+      <HashLoader
+        size={80}
+        cssOverride={override}
+        loading={loading}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
     );
   }
 
@@ -52,6 +83,7 @@ const HomeDonor = () => {
           <div className="select-option">
             <small className="smaill-css">Blood Group</small>
             <select {...register("bloodGroup")} className="mb-3 select-options">
+            <option value="All">All Blood Groups</option>
               <option value="A+">A+</option>
               <option value="O+">O+</option>
               <option value="AB+">AB+</option>
@@ -60,8 +92,10 @@ const HomeDonor = () => {
               <option value="O-">O-</option>
               <option value="AB-">AB-</option>
               <option value="B-">B-</option>
+              
             </select>
             <input type="submit" value="Search" className="searce-btn" />
+          
           </div>
         </form>
       </div>
@@ -80,19 +114,32 @@ const HomeDonor = () => {
           </button>
         </NavLink>
       </div>
+
+    {loading ?  ( // Conditionally render loader based on loading state
+     <div className="loader-container">
+      <HashLoader
+        size={80}
+        cssOverride={override}
+        loading={loading}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
+   </div>  
+  ) : (
+    <div>
       {!uidonor.length && (
         <div>
-          <h4 className="no-fund">Opps ! No Donor Found</h4>
+          <h4 className="no-fund">Oops! No Donor Found</h4>
         </div>
       )}
       <div className="row mx-3 mb-5">
         {uidonor.map((donordata) => (
-          <HomeDonorData
-            donordata={donordata}
-            key={donordata._id}
-          ></HomeDonorData>
+          <HomeDonorData donordata={donordata} key={donordata._id}></HomeDonorData>
         ))}
       </div>
+    </div>
+  )
+    }
     </div>
   );
 };
