@@ -1,5 +1,5 @@
 
-//added by chatgpt to solve useeffect white screen error
+//added code to solve useeffect white screen error
 
 import React, { useEffect, useState } from "react";
 import "./HomeDonor.css";
