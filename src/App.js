@@ -16,6 +16,7 @@ import AuthProvider from "./contexts/AuthProvider/AuthProvider";
 import PrivateRoute from "./component/Login/PrivateRoute/PrivateRoute";
 import AdminRoute from "./component/Login/AdminRoute/AdminRoute";
 import UserBloodRequest from "./component/UserDashboard/UserBloodRequest/UserBloodRequest";
+import Backgraund from "./component/Shared/background/Backgraund";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <AuthProvider>
         <Router>
           <NavBar />
+          <Backgraund/>
           <Switch>
             <Route exact path="/">
               <HomeMain />

@@ -7,8 +7,8 @@ import hospital from '../../../images/hospital-building-modern-parking-lot-59693
 const BigProject = () => {
     const now = 40
     return (
-        <div className='mx-3 mt-3'>
-              <h1 className='big-project'>Our Big Project</h1>
+        <div className='mx-3 mt-3 bigproject-container'>
+              <h1 className='big-project text-white mt-5'>Our Big Project</h1>
             <div className='row'>
                 <div className='col-lg-6 col-sm-12 mb-5'>
                 <img src={hospital} class="img-fluid  image" alt="..."/>

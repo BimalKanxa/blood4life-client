@@ -5,14 +5,14 @@ import gif from '../../../images/faq.gif'
 const Faq = () => {
     return (
         //FAQ Section
-        <>
-            <h3 className='m-5 text-title text-center'>Frequently Asked Questions (FAQ)</h3>
+        <div className='bigproject-container'>
+            <h3 className='m-5 text-title text-center text-white'>Frequently Asked Questions (FAQ)</h3>
             <div className=' row mx-5 mb-5 '>
                 <div className='col-lg-6 col-sm-12  ' >
                     <img src={gif} className='rounded img-fluid' alt="" />
                 </div>
                 <div id='faq' className='col-lg-6 col-sm-12 my-5' >
-                    <Accordion defaultActiveKey="0" flush>
+                    <Accordion defaultActiveKey="0" flush className='accordion'>
                         <Accordion.Item eventKey="0">
                             <Accordion.Header>Who Are We?</Accordion.Header>
                             <Accordion.Body>
@@ -41,7 +41,7 @@ const Faq = () => {
                 </div>
             </div>
 
-        </>
+        </div>
     );
 };
 
