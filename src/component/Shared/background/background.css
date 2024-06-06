@@ -28,6 +28,7 @@
   }
   
   .background-images .blood-cells{
+    width: 100vw;
     position: fixed;
     top: -2rem;
     z-index: -1;
