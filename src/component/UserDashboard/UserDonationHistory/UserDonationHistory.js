@@ -8,7 +8,7 @@ const UserDonationHistory = () => {
   const [donations, setDonations] = useState([]);
 
   useEffect(() => {
-    fetch(`https://blood4life-server.vercel.app/${user.email}/bloods`)
+    fetch(`https://blood4life-server.vercel.app/${user.email}/donateBlood`)
       .then((res) => res.json())
       .then((data) => setDonations(data));
   }, []);
@@ -28,10 +28,10 @@ const UserDonationHistory = () => {
 
   return (
     <div className="donation-history-container">
-      <h2>My Donation History</h2>
-      <div className="donation-history">
-        <Table striped bordered hover>
-          <thead>
+      <h2 className="text-white">My Donation History</h2>
+      <div className="donation-history ">
+        <Table striped bordered hover className="table-donor-list" >
+          <thead className="text-white">
             <tr className="table-head">
               <th>Name</th>
               <th>Age</th>
@@ -41,7 +41,7 @@ const UserDonationHistory = () => {
               <th>Status</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-white">
             {donations.map((donation) => (
               <SingleDonation
                 key={donation._id}

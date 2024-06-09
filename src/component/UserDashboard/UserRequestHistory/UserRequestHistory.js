@@ -34,10 +34,10 @@ const UserRequestHistory = () => {
 
   return (
     <div className="request-history-container">
-      <h2>My Request History</h2>
+      <h2 className="text-white">My Request History</h2>
       <div className="request-history">
-        <Table striped bordered hover>
-          <thead>
+        <Table striped bordered hover className="table-donor-list">
+          <thead className="text-white">
             <tr className="table-head">
               <th>Patient Name</th>
               <th>Patient Age</th>

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import useAuth from "../../../hooks/useAuth";
+import './Donar.css'
 
 const Donar = () => {
   const { user, logOut } = useAuth();
@@ -44,7 +45,7 @@ const Donar = () => {
   };
   return (
     <div className="donate-blood-form-container ">
-      <h2 className="m-3">Donate Blood Save Life !</h2>
+      <h2 className="m-3 text-white">Donate Blood Save Life !</h2>
       <div className="donate-blood-form">
         {/* <h5 className="mb-5">Please give your details to donate blood</h5> */}
         <form onSubmit={handleSubmit(onSubmit)}>

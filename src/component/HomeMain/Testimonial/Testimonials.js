@@ -13,27 +13,27 @@ const Testimonials = () => {
 
 
         {
-            name: 'Gareth Bale',
+            name: 'Bimal Sharma',
             description: 'This website is a platform for blood seekers & donars, where one can easily choose their desired blood groups from nearby locations.',
-            address: 'USA',
+            address: 'Assam',
             img: 'https://i.ibb.co/n1zYTr4/test1.png'
         },
         {
-            name: 'Brandon Savage',
+            name: 'Manogya Sharma',
             description: 'This website is a platform for blood seekers & donars, where one can easily choose their desired blood groups from nearby locations.',
-            address: 'USA',
+            address: 'Assam',
             img: '  https://i.ibb.co/ZxKhRbR/test2.png'
         },
         {
-            name: 'Steve Burns',
+            name: 'Baroon Jha',
             description: 'This website is a platform for blood seekers & donars, where one can easily choose their desired blood groups from nearby locations.',
-            address: 'USA',
+            address: 'Adabari',
             img: ' https://i.ibb.co/TTfpJXb/test3.png'
         },
         {
-            name: 'Kevin Canlas',
+            name: 'Subhangi Paul',
             description: 'This website is a platform for blood seekers & donars, where one can easily choose their desired blood groups from nearby locations.',
-            address: 'USA',
+            address: 'Pan Bazaar',
             img: 'https://i.ibb.co/9ykHHw8/test4.png'
         },
     ]

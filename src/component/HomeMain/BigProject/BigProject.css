@@ -55,26 +55,28 @@
 }
 
 .hospital-string{
-    color: red;
+    /* color: red; */
+    color: cyan;
 }
 
 .hospital-text{
-    font-family: 'Font Awesome 5 Pro';
+    /* font-family: ''; */
     letter-spacing: 1px;
     font-size: 16px;
-    color: #777;
+    /* color: #777; */
+    color: white;
     font-weight: 100;
 }
 
 .money{
-    color: red;
+    color: rgb(22, 236, 15);
     font-family: monospace;
     padding: 12px;
     letter-spacing: 1px;
 }
 
 .terget{
-    color: black;
+    color: rgb(221, 218, 12);
     font-family: inherit;
     font-size: 17px;
 }

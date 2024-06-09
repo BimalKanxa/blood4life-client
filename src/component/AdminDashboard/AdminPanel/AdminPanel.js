@@ -1,10 +1,10 @@
 import React from "react";
 import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 import BloodRequests from "../BloodRequests/BloodRequests";
-import Donor from "../../Donor/Donor";
+import Donor from "../Donor/Donor";
 import Home from "../AdminHome/AdminHome";
 import RequestHistory from "../RequestHistory/RequestHistory";
-import "./AdminPanel.css";
+import "./AdminPanel.css"; 
 import MakeAdmin from "../MakeAdmin/MakeAdmin";
 import DonationRequests from "../DonationRequests/DonationRequests";
 
@@ -34,6 +34,26 @@ const AdminPanel = () => {
           <div>
             <Link className="link-style" to={`${url}`}>
               <li className="list-item">
+                <i className=""></i>
+              </li>
+            </Link>
+            <Link className="link-style" to={`${url}`}>
+              <li className="list-item">
+                <i className=""></i>
+              </li>
+            </Link>
+            <Link className="link-style" to={`${url}`}>
+              <li className="list-item">
+                <i className=""></i>
+              </li>
+            </Link>
+            <Link className="link-style" to={`${url}`}>
+              <li className="list-item">
+                <i className=""></i>
+              </li>
+            </Link>
+            <Link className="link-style" to={`${url}`}>
+              <li className="list-item">
                 <i className="fas fa-home list-icon"></i>Home
               </li>
             </Link>
@@ -42,6 +62,7 @@ const AdminPanel = () => {
                 <i className="fas fa-user-alt list-icon"></i>Donor
               </li>
             </Link>
+             
             <Link className="link-style" to={`${url}/donationRequests`}>
               <li className="list-item">
                 <i className="fas fa-user-alt list-icon"></i>Blood Donation

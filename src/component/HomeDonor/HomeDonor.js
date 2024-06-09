@@ -77,7 +77,7 @@ const HomeDonor = () => {
           </div>
         </form>
       </div>
-      <div className="m-5 make-req">
+      <div className="m-5 make-req" style={{color:"white"}}>
         <h5>
           If you didn't find a donor, please send a blood request to the blood bank.
         </h5>

@@ -49,8 +49,8 @@ const UserDonateBlood = () => {
   };
   return (
     <div className="donate-blood-form-container ">
-      <h2 className="m-3">Be a Donar ! </h2>
-      <h5 className="pb-3">
+      <h2 className="m-3 text-white">Be a Donar ! </h2>
+      <h5 className="pb-3 text-white">
         "There is a hope of life to someone in your blood donation"
       </h5>
       <div className="donate-blood-form">
@@ -103,7 +103,7 @@ const UserDonateBlood = () => {
             placeholder="Disease (if any, oterwise type 'no')"
             {...register("disease", { required: true })}
           />
-          <label> &nbsp; Last donate date:</label>
+          <label style={{color:'cyan'}}> &nbsp; Last donate date:</label>
           <input
             type="date"
             placeholder="Last donate date"

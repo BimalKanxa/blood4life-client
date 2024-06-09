@@ -31,7 +31,7 @@ export default function ContactUs() {
 
   return (
     <Container className="section">
-      <h2 className="text-center text-title mt-4 mb-2 py-1">Contact With Us</h2>
+      <h2 className="text-center text-title mt-4 mb-2 py-1 text-white">Connect With Us</h2>
       <div className="form-container row">
         <div className="col-md-4 col-lg-4 col-12 contact-img container ">
           <img src={contact} className="img-fluid" alt="" />

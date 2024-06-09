@@ -13,10 +13,9 @@ const Ourteam = () => {
              <img src="https://image.shutterstock.com/image-photo/portrait-charming-mature-man-true-260nw-1571432695.jpg" className="image-tem" alt="..." />
          </div>       
            <Card.Body>
-            <Card.Subtitle className=" mt-5 text-white">Bimal</Card.Subtitle>
+            <Card.Subtitle className=" mt-5 text-white">Bimal Sharma</Card.Subtitle>
             <Card.Text className='card-text'>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
+            "Hi there! I'm Bimal Sharma, a passionate full stack developer. With a robust skill set encompassing front-end technologies like HTML, CSS, and JavaScript, coupled with expertise in back-end frameworks such as Node.js and ExpressJs, I thrive on bringing creative ideas to life in the digital realm".
             </Card.Text>
               </Card.Body>
              </Card> 
@@ -30,10 +29,9 @@ const Ourteam = () => {
              <img src="https://media.istockphoto.com/photos/smiling-indian-man-looking-at-camera-picture-id1270067126?k=20&m=1270067126&s=612x612&w=0&h=ZMo10u07vCX6EWJbVp27c7jnnXM2z-VXLd-4maGePqc=" className="image-tem" alt="..." />
          </div>       
            <Card.Body>
-            <Card.Subtitle className="mt-5 text-white">Mr. Rahul </Card.Subtitle>
+            <Card.Subtitle className="mt-5 text-white">Rahul Ray</Card.Subtitle>
             <Card.Text className='card-text'>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
+            "Hi there! I'm Bimal Sharma, a passionate full stack developer. My journey in software development is fueled by a relentless curiosity and a commitment to excellence, as I continuously seek out new challenges and opportunities to innovate".
             </Card.Text>
               </Card.Body>
              </Card> 
@@ -44,13 +42,12 @@ const Ourteam = () => {
             <div>     
             <Card  className='team'> 
             <div>
-             <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="image-tem" alt="..." />
+             <img src="https://images.pexels.com/photos/1181487/pexels-photo-1181487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="image-tem" alt="..." />
          </div>       
            <Card.Body>
-            <Card.Subtitle className="mt-5 text-white">Baroon</Card.Subtitle>
+            <Card.Subtitle className="mt-5 text-white">Dr. Kangkana Bora</Card.Subtitle>
             <Card.Text className='card-text'>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
+            "Hi there! I'm Dr. Kangkana Bora, Assistant Professor, Department of Computer Science and IT. I am specialize in Machine Learning and Artificial Intelligence. I have more than 15 years of experience in teaching. I'm dedicated to fostering a collaborative learning environment, practical and hands-on experience in building real-world software solutions.".
             </Card.Text>
               </Card.Body>
              </Card> 

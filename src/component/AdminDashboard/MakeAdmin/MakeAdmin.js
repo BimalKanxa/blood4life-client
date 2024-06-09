@@ -49,14 +49,16 @@ const MakeAdmin = () => {
   return (
     <div className="make-admin-container">
       <div className=" make-admin-form">
-        <h2>Make An Admin</h2>
+        <h2 className="text-white">Make An Admin</h2>
         <form className="mb-5, pb-5" onSubmit={handleAdminSubmit}>
           <TextField
-            sx={{ width: "100%" }}
+            sx={{ width: "100%"}}
             label="Email"
             type="email"
             onBlur={handleOnBlur}
             variant="standard"
+            InputLabelProps={{ style: { color: 'white' } }}
+            InputProps={{ style: { color: 'white' } }}
           />{" "}
           <br />
           <Button className="mt-3" type="submit" variant="contained">

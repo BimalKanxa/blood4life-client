@@ -8,7 +8,7 @@ const UserDashboardHome = () => {
   const [requests, setrequests] = useState([]);
 
   useEffect(() => {
-    fetch(`https://blood4life-server.vercel.app/${user.email}/bloods`)
+    fetch(`https://blood4life-server.vercel.app/${user.email}/donateBlood`)
       .then((res) => res.json())
       .then((data) => setDonations(data));
   }, []);
@@ -40,11 +40,11 @@ const UserDashboardHome = () => {
   );
   return (
     <Container>
-      <div className="">
-        <h4 className="mt-3 mb-3">Blood Donations Record</h4>
-        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 g-lg-4">
-          <div className="col">
-            <div className="p-3 border card-plate-d">
+      <div className="" >
+        <h4 className="mt-3 mb-3 text-white">Blood Donations Record</h4>
+        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 g-lg-4" >
+          <div className="col" >
+            <div className="p-3 border card-plate-d" style={{backgroundColor:"cyan"}}>
               <p className="donor-icon">
                 <i className="fas fa-paper-plane text-secondary"></i>
               </p>
@@ -53,16 +53,16 @@ const UserDashboardHome = () => {
             </div>
           </div>
           <div className="col">
-            <div className="p-3 border card-plate-d">
+            <div className="p-3 border card-plate-d" style={{backgroundColor:"cyan"}}>
               <p className="donor-icon">
                 <i className="fas fa-hourglass-half text-secondary"></i>
               </p>
-              <p className="total">Panding Request</p>
+              <p className="total">Pending Request</p>
               <p className="count">{donationsPending.length}</p>
             </div>
           </div>
           <div className="col">
-            <div className="p-3 border card-plate-d">
+            <div className="p-3 border card-plate-d" style={{backgroundColor:"cyan"}}>
               <p className="donor-icon">
                 <i className="far fa-check-circle text-success"></i>
               </p>
@@ -71,7 +71,7 @@ const UserDashboardHome = () => {
             </div>
           </div>
           <div className="col">
-            <div className="p-3 border card-plate-d">
+            <div className="p-3 border card-plate-d" style={{backgroundColor:"cyan"}}>
               <p className="donor-icon">
                 <i className="fas fa-times-circle text-danger"></i>
               </p>
@@ -83,10 +83,10 @@ const UserDashboardHome = () => {
       </div>
       <hr className="mt-5 " />
       <div className="blood-request-dashboard mb-5">
-        <h4 className=" mb-3">Blood Requests Record</h4>
+        <h4 className=" mb-3 text-white">Blood Requests Record</h4>
         <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 g-lg-4">
           <div className="col">
-            <div className="p-3 border card-plate-r">
+            <div className="p-3 border card-plate-r" style={{backgroundColor:"cyan"}}>
               <p className="donor-icon">
                 <i className="fas fa-paper-plane text-secondary"></i>
               </p>
@@ -95,7 +95,7 @@ const UserDashboardHome = () => {
             </div>
           </div>
           <div className="col">
-            <div className="p-3 border card-plate-r">
+            <div className="p-3 border card-plate-r" style={{backgroundColor:"cyan"}}>
               <p className="donor-icon">
                 <i className="fas fa-hourglass-half text-secondary"></i>
               </p>
@@ -104,7 +104,7 @@ const UserDashboardHome = () => {
             </div>
           </div>
           <div className="col">
-            <div className="p-3 border card-plate-r">
+            <div className="p-3 border card-plate-r" style={{backgroundColor:"cyan"}}>
               <p className="donor-icon">
                 <i className="far fa-check-circle text-success"></i>
               </p>
@@ -113,7 +113,7 @@ const UserDashboardHome = () => {
             </div>
           </div>
           <div className="col">
-            <div className="p-3 border card-plate-r">
+            <div className="p-3 border card-plate-r" style={{backgroundColor:"cyan"}}>
               <p className="donor-icon">
                 <i className="fas fa-times-circle text-danger"></i>
               </p>

@@ -1,0 +1,20 @@
+.add-data-button {
+    padding: 10px 20px; /* Add padding for better spacing */
+    font-size: 16px; /* Increase font size for better readability */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Button background color */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .add-data-button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+  
+  /* Optional: Add box shadow for depth effect */
+  .add-data-button:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow on focus */
+  }
+  

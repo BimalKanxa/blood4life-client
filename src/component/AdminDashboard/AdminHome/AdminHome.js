@@ -48,15 +48,15 @@ const AdminHome = () => {
     <div className="p-3">
       <Charts></Charts>
       <div >
-        <h3 className=" mb-3 mt-3 subro">Total Donor Data</h3>
+        <h3 className=" mb-3 mt-3 subro" style={{color:'white'}}>Total Donor Data</h3>
         <div className="row row-cols-2 row-cols-lg-4 g-2 g-lg-4">
           <div className="col">
             <div className="p-3 border total-css">
               <p className="donor-icon">
                 <i class="fas fa-users"></i>
               </p>
-              <p className="total">Total Donors</p>
-              <p className="count">{donors.length}</p>
+              <p className="total text-white">Total Donors</p>
+              <p className="count text-white">{donors.length}</p>
             </div>
           </div>
 
@@ -65,8 +65,8 @@ const AdminHome = () => {
               <p className="donor-icon">
                 <i class="fas fa-users"></i>
               </p>
-              <p className="total">Total Pending</p>
-              <p className="count">{pandingdata.length}</p>
+              <p className="total text-white">Total Pending</p>
+              <p className="count text-white">{pandingdata.length}</p>
             </div>
           </div>
 
@@ -75,8 +75,8 @@ const AdminHome = () => {
               <p className="donor-icon">
                 <i class="fas fa-users"></i>
               </p>
-              <p className="total">Total Approved</p>
-              <p className="count">{approve.length}</p>
+              <p className="total text-white">Total Approved</p>
+              <p className="count text-white">{approve.length}</p>
             </div>
           </div>
 
@@ -85,23 +85,23 @@ const AdminHome = () => {
               <p className="donor-icon">
                 <i class="fas fa-users"></i>
               </p>
-              <p className="total">Total Rejected</p>
-              <p className="count">{rejecteddata.length}</p>
+              <p className="total text-white">Total Rejected</p>
+              <p className="count text-white">{rejecteddata.length}</p>
             </div>
           </div>
         </div>
 
         {/************************************************************ */}
         <div>
-          <h3 className=" mb-3 mt-5 subro">Total Blood Requests Data</h3>
+          <h3 className=" mb-3 mt-5 subro text-white">Total Blood Requests Data</h3>
           <div className="row row-cols-2 row-cols-lg-4 g-2 g-lg-4">
             <div className="col">
               <div className="p-3 border total-css">
                 <p className="donor-icon">
                   <i class="fas fa-spinner"></i>
                 </p>
-                <p className="total">Total Requests</p>
-                <p className="count">{bloodrequest.length}</p>
+                <p className="total text-white">Total Requests</p>
+                <p className="count text-white">{bloodrequest.length}</p>
               </div>
             </div>
             <div className="col">
@@ -109,8 +109,8 @@ const AdminHome = () => {
                 <p className="donor-icon">
                   <i class="far fa-check-circle"></i>
                 </p>
-                <p className="total">Pending Requests</p>
-                <p className="count">{panding.length}</p>
+                <p className="total text-white">Pending Requests</p>
+                <p className="count text-white">{panding.length}</p>
               </div>
             </div>
             <div className="col">
@@ -118,8 +118,8 @@ const AdminHome = () => {
                 <p className="donor-icon">
                   <i class="far fa-check-circle"></i>
                 </p>
-                <p className="total">Approved Requests</p>
-                <p className="count">{bloodAprove?.length}</p>
+                <p className="total text-white">Approved Requests</p>
+                <p className="count text-white">{bloodAprove?.length}</p>
               </div>
             </div>
             <div className="col">
@@ -127,8 +127,8 @@ const AdminHome = () => {
                 <p className="donor-icon">
                   <i class="fas fa-burn "></i>
                 </p>
-                <p className="total">Total Rejected</p>
-                <p className="count">{rejected.length}</p>
+                <p className="total text-white">Total Rejected</p>
+                <p className="count text-white">{rejected.length}</p>
               </div>
             </div>
           </div>

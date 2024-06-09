@@ -15,15 +15,15 @@ const SingleRequest = (props) => {
 
   return (
     <tr>
-      <td>{name}</td>
-      <td>{age}</td>
-      <td>{reason}</td>
-      <td>{quantity}</td>
-      <td>{doctorName}</td>
-      <td>{requestDate}</td>
-      <td>{bloodGroup}</td>
-      <td>{address}</td>
-      <td>{status}</td>
+      <td className="text-white">{name}</td>
+      <td className="text-white">{age}</td>
+      <td className="text-white">{reason}</td>
+      <td className="text-white">{quantity}</td>
+      <td className="text-white">{doctorName}</td>
+      <td className="text-white">{requestDate}</td>
+      <td className="text-white">{bloodGroup}</td>
+      <td className="text-white">{address}</td>
+      <td className="text-white">{status}</td>
     </tr>
   );
 };

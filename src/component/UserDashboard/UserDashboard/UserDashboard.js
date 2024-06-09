@@ -27,14 +27,24 @@ const UserDashboard = () => {
       <div className="row dashbord-fild ">
         <div className="col-lg-2 col-sm-12 dashbord-list">
           <div>
+          <Link className="link-style" to={`${url}`}>
+              <li className="list-item">
+                <i class=""></i>
+              </li>
+            </Link>
+            <Link className="link-style">
+              <li className="list-item">
+                {/* <i class="fas fa-hand-holding-medical"></i> - */}
+              </li>
+            </Link>
+            <Link className="link-style" to={`${url}`}>
+              <li className="list-item">
+                <i class=""></i>
+              </li>
+            </Link>
             <Link className="link-style" to={`${url}`}>
               <li className="list-item">
                 <i class="fas fa-home list-icon"></i>Home
-              </li>
-            </Link>
-            <Link className="link-style" to={`${url}/donateBlood`}>
-              <li className="list-item">
-                <i class="fas fa-hand-holding-medical"></i> Donate Blood
               </li>
             </Link>
             <Link className="link-style" to={`${url}/donationHistory`}>
@@ -46,6 +56,12 @@ const UserDashboard = () => {
             <Link className="link-style" to={`${url}/bloodRequests`}>
               <li className="list-item">
                 <i class="fas fa-sync-alt  list-icon"></i>Blood Requests
+              </li>
+            </Link>
+
+            <Link className="link-style" to={`${url}/donateBlood`}>
+              <li className="list-item">
+                <i class="fas fa-hand-holding-medical"></i> Donate Blood
               </li>
             </Link>
 

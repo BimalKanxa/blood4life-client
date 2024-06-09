@@ -38,28 +38,34 @@ const Login = () => {
                 </Grid>
                 <Grid className="text-center" item sx={{ mt: 10 }} xs={12} md={6}>
                     {isLoading && <CircularProgress />}
-                    <Typography sx={{ width: '60%'}} variant="h4" gutterBottom>
+                    <Typography sx={{ width: '60%', color:'cyan'}} variant="h4" gutterBottom>
                         Login Here
                     </Typography>
                     <form onSubmit={handleLogin}>
                         <TextField
-                            sx={{ width: '75%', mt: 1 }}
+                            sx={{ width: '75%', color:'white', mt: 1 }}
                             id="standard-basic"
                             label="Email"
                             name="email"
                             onChange={handleOnChange}
-                            variant="standard" />
+                            variant="standard" 
+                            InputProps={{ style: { color: 'white' } }}
+                            InputLabelProps={{ style: { color: 'white' } }}
+                            />
                         <TextField
-                            sx={{ width: '75%', mt: 1 }}
+                            sx={{ width: '75%',color:'white', mt: 1 }}
                             id="standard-basic"
                             label="Password"
                             type="password"
                             name="password"
                             onChange={handleOnChange}
-                            variant="standard" />
+                            variant="standard" 
+                            InputProps={{ style: { color: 'white' } }}
+                            InputLabelProps={{ style: { color: 'white' } }}
+                            />
                         <Button sx={{ width: '75%', mt: 2, mb:1 }} type="submit" variant="contained">Login</Button>
                         <NavLink style={{ textDecoration: 'none' }} to="/register">
-                            <Button sx={{ width: '75%'}} variant="text">New User? Please Register</Button>
+                            <Button sx={{ width: '75%', color:'white'}} variant="text">New User? Please Register</Button>
                         </NavLink> 
                         {user?.email && <Alert severity="success">Successfully Login Your Account</Alert>}
                         {authError && <Alert severity="error">{authError}</Alert>}

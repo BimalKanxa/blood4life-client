@@ -48,13 +48,13 @@ function App() {
             <Route path="/contact-us">
               <ContactUs />
             </Route>
-            <AdminRoute path="/admindashboard">
+            <AdminRoute  path="/admindashboard">
               <AdminPanel />
             </AdminRoute>
             <PrivateRoute path="/be-a-donar">
               <UserDonateBlood />
             </PrivateRoute>
-            <PrivateRoute path="/userdashboard">
+            <PrivateRoute  path="/userdashboard">
               <UserDashboard />
             </PrivateRoute>
             <PrivateRoute path="/user-blood-request">

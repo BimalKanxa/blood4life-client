@@ -14,7 +14,7 @@ const Charts = () => {
 
   //////load data//
   useEffect(() => {
-    fetch("https://blood4life-server.vercel.app/bloods")
+    fetch("https://blood4life-server.vercel.app/donateBlood")
       .then((res) => res.json())
       .then((approve) => {
         const data = approve.filter((data) => data?.status === "Approved");
@@ -44,7 +44,7 @@ const Charts = () => {
   ////load data///
 
   return (
-    <div>
+    <div style={{color:'white'}}>
       <h2>Bloods in stock</h2>
       <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 g-lg-4">
         <div className="col">
@@ -52,8 +52,8 @@ const Charts = () => {
             <div className="p-1">
               <i class="fas fa-burn blood-icon"></i>
               <span className="blood"> &nbsp;A+</span>
-              <p className="count">
-                In Stock : <span className="stock">{apositive.length} </span>
+              <p className="count text-white">
+                In Stock : <span className="stock text-white">{apositive.length} </span>
                 Bag(s)
               </p>
             </div>
@@ -64,8 +64,8 @@ const Charts = () => {
             <div className="p-1">
               <i class="fas fa-burn blood-icon"></i>
               <span className="blood"> &nbsp;B+</span>
-              <p className="count">
-                In Stock : <span className="stock">{bpositive.length} </span>
+              <p className="count text-white">
+                In Stock : <span className="stock text-white">{bpositive.length} </span>
                 Bag(s)
               </p>
             </div>
@@ -76,8 +76,8 @@ const Charts = () => {
             <div className="p-1">
               <i class="fas fa-burn blood-icon"></i>
               <span className="blood"> &nbsp;O+</span>
-              <p className="count">
-                In Stock : <span className="stock">{opositive.length} </span>
+              <p className="count text-white">
+                In Stock : <span className="stock text-white">{opositive.length} </span>
                 Bag(s)
               </p>
             </div>
@@ -88,8 +88,8 @@ const Charts = () => {
             <div className="p-1">
               <i class="fas fa-burn blood-icon"></i>
               <span className="blood"> &nbsp;AB+</span>
-              <p className="count">
-                In Stock : <span className="stock">{abpositive.length} </span>
+              <p className="count text-white">
+                In Stock : <span className="stock text-white">{abpositive.length} </span>
                 Bag(s)
               </p>
             </div>
@@ -100,8 +100,8 @@ const Charts = () => {
             <div className="p-1">
               <i class="fas fa-burn blood-icon"></i>
               <span className="blood"> &nbsp;A-</span>
-              <p className="count">
-                In Stock : <span className="stock">{anegative.length} </span>
+              <p className="count text-white">
+                In Stock : <span className="stock text-white">{anegative.length} </span>
                 Bag(s)
               </p>
             </div>
@@ -112,8 +112,8 @@ const Charts = () => {
             <div className="p-1">
               <i class="fas fa-burn blood-icon"></i>
               <span className="blood"> &nbsp;B-</span>
-              <p className="count">
-                In Stock : <span className="stock">{bnegative.length} </span>
+              <p className="count text-white">
+                In Stock : <span className="stock text-white">{bnegative.length} </span>
                 Bag(s)
               </p>
             </div>
@@ -124,8 +124,8 @@ const Charts = () => {
             <div className="p-1">
               <i class="fas fa-burn blood-icon"></i>
               <span className="blood"> &nbsp;O-</span>
-              <p className="count">
-                In Stock : <span className="stock">{onegative.length} </span>
+              <p className="count text-white">
+                In Stock : <span className="stock text-white">{onegative.length} </span>
                 Bag(s)
               </p>
             </div>
@@ -135,9 +135,9 @@ const Charts = () => {
           <div className="col stock-card">
             <div className="p-1">
               <i class="fas fa-burn blood-icon"></i>
-              <span className="blood"> &nbsp;AB-</span>
-              <p className="count">
-                In Stock : <span className="stock">{abnegative.length} </span>
+              <span className="blood" style={{color:'white'}}> &nbsp;AB-</span>
+              <p className="count" style={{color:'white'}}>
+                In Stock : <span className="stock" style={{color:'white'}}>{abnegative.length} </span>
                 Bag(s)
               </p>
             </div>

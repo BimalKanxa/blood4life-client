@@ -28,7 +28,7 @@ const UserBloodRequest = () => {
   };
   return (
     <div className="request-blood-form-container ">
-      <h2 className="m-3">Make a blood request</h2>
+      <h2 className="m-3 text-white">Make a blood request</h2>
       <div className="request-blood-form">
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
