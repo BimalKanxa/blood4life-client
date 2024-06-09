@@ -23,7 +23,7 @@ const NavBar = () => {
             width="58"
             height="52"
           />
-          <div className="nav-name">Blood-4-Life</div>
+          <div className="nav-name">Blood-4Life</div>
         </NavLink>
         <ul
           id="item-container"

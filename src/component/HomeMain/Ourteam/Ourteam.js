@@ -31,7 +31,7 @@ const Ourteam = () => {
            <Card.Body>
             <Card.Subtitle className="mt-5 text-white">Rahul Ray</Card.Subtitle>
             <Card.Text className='card-text'>
-            "Hi there! I'm Bimal Sharma, a passionate full stack developer. My journey in software development is fueled by a relentless curiosity and a commitment to excellence, as I continuously seek out new challenges and opportunities to innovate".
+            "Hi there! I'm Rahul Ray, a passionate full stack developer. My journey in software development is fueled by a relentless curiosity and a commitment to excellence, as I continuously seek out new challenges and opportunities to innovate".
             </Card.Text>
               </Card.Body>
              </Card> 
