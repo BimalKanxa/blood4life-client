@@ -63,9 +63,9 @@ const Testimonials = () => {
     return (
         <section id="testimonial" className="testimonials pt-50 pb-50">
             <div className="container mt-5">
-                <h3 className="miniTitle text-center text-title">TESTIMONIALS</h3>
+                <h3 className="miniTitle text-center text-title text-white">TESTIMONIALS</h3>
                 <div className="text-center mt-2 pt-2 ">
-                    <h4 className="sectionTitle">What Our Clients are Saying?</h4>
+                    <h4 className="sectionTitle text-info">What Our Clients are Saying?</h4>
                 </div>
                 {/* <p className="text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p> */}
                 <div className="row">

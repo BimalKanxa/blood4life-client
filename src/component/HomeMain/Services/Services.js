@@ -33,10 +33,10 @@ const Services = () => {
     return (
         <Box sx={{ flexGrow: 1, my: 5 }}>
             <Container >
-                <Typography sx={{ fontweight: 700, my: 2, textAlign: 'center' }} className='text-title' variant="h4" component="div" >
+                <Typography sx={{ fontweight: 700, my: 2, textAlign: 'center' }} className='text-title text-light' variant="h4" component="div" >
                     Our Services
                 </Typography>
-                <Typography sx={{ fontweight: 600, mb: 4, textAlign: 'center' }} variant="h5" component="div">
+                <Typography sx={{ fontweight: 600, mb: 4, textAlign: 'center' }} className='text-info' variant="h5" component="div">
                     Services We Provide
                 </Typography>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
